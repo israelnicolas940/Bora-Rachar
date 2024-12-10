@@ -11,7 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="168dp"
         android:layout_height="95dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="68dp"
         android:text="Vamos Rachar!"
         android:textAlignment="center"
         android:textColor="#FEFEFE"
@@ -23,60 +23,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:clickable="true"
-        android:contentDescription="Sound"
-        android:onClick="clickFalar"
-        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.229"
-        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
-        app:layout_constraintTop_toBottomOf="@+id/tvDynamicText"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/speaker_icon" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:clickable="true"
-        android:contentDescription="Share"
-        android:onClick="clickShare"
-        android:outlineAmbientShadowColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDynamicText"
-        app:layout_constraintVertical_bias="0.293"
-        app:rippleColor="#1C0D52"
-        app:srcCompat="@android:drawable/ic_menu_share" />
-
     <EditText
         android:id="@+id/edtConta"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:contentDescription="Text box"
+        android:layout_marginTop="44dp"
+        android:contentDescription="Text Box"
         android:ems="10"
+        android:gravity="center"
+        android:hint="Valor Total"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/edtJogadores"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="Text Box"
         android:ems="10"
+        android:gravity="center"
+        android:hint="Quantidade de Pessoas"
         android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/tvDynamicText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtConta" />
 
     <TextView
@@ -93,6 +66,38 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.593" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:clickable="true"
+        android:contentDescription="Sound"
+        android:onClick="clickFalar"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+        app:layout_constraintTop_toBottomOf="@+id/tvDynamicText"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/speaker_icon" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:clickable="true"
+        android:contentDescription="Share"
+        android:onClick="clickShare"
+        android:outlineAmbientShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDynamicText"
+        app:layout_constraintVertical_bias="0.25"
+        app:rippleColor="#1C0D52"
+        app:srcCompat="@android:drawable/ic_menu_share" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
