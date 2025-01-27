@@ -9,8 +9,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="168dp"
-        android:layout_height="95dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="168dp"
+        android:minHeight="95dp"
         android:layout_marginTop="68dp"
         android:text="Vamos Rachar!"
         android:textAlignment="center"
@@ -27,8 +29,10 @@
     <EditText
         android:id="@+id/edtConta"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:textSize="20sp"
+        android:minHeight="25dp"
         android:hint="Valor Total"
         android:inputType="numberDecimal"
         android:importantForAccessibility="yes"
@@ -39,8 +43,10 @@
     <EditText
         android:id="@+id/edtJogadores"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:textSize="20sp"
+        android:minHeight="25dp"
         android:hint="Quantidade de pessoas"
         android:inputType="number"
         android:importantForAccessibility="yes"
@@ -51,8 +57,9 @@
 
     <TextView
         android:id="@+id/tvDynamicText"
-        android:layout_width="185dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minWidth="185dp"
         android:gravity="center"
         android:text="Resultado será exibido aqui"
         android:textColor="#FEFEFE"
